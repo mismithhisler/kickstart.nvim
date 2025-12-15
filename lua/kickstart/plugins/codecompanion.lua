@@ -14,12 +14,14 @@ return {
         },
       },
       adapters = {
-        copilot = function()
-          return require('codecompanion.adapters').extend('copilot', {
-            name = 'copilot', -- give this adapter a different name to differentiate it from the default ollama adapter
-            env = {},
-          })
-        end,
+        http = {
+          copilot = function()
+            return require('codecompanion.adapters').extend('copilot', {
+              name = 'copilot', -- give this adapter a different name to differentiate it from the default ollama adapter
+              env = {},
+            })
+          end,
+        },
       },
     },
     dependencies = {
