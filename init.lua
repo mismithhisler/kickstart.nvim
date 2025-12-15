@@ -675,11 +675,11 @@ require('lazy').setup({
       local servers = {
         -- clangd = {},
         gopls = {
-          settings = {
-            gopls = {
-              -- buildFlags = { '-tags=ent' },
-            },
-          },
+          -- settings = {
+          --   gopls = {
+          --     buildFlags = { '-tags=ent' },
+          --   },
+          -- },
         },
         -- pyright = {},
         -- rust_analyzer = {},
